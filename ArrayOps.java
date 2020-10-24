@@ -91,12 +91,9 @@ public class ArrayOps {
     return true;
   }
 
-  /*
+
   //5d: isLocationMagic takes a rectangular 2d array
-  and returns true when the row and column specified have the same sum.
-  {  2,  4, 2 }, sumCols: {4, 6, 4}
-  {  2, 2, 2 } }; sumRows: {8, 6}
-  */
+  //and returns true when the row and column specified have the same sum.
   public static boolean isLocationMagic(int[][] matrix, int row, int col) {
     int[] sumCols = sumCols(matrix);
     int[] sumRows = sumRows(matrix);
