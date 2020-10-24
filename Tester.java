@@ -30,6 +30,27 @@ public class Tester {
                   {5}
                 };
     int[][] E = {{}};
+    int[][] F = { {  1,  2, 3, 4 },
+                  {  2, 3,  4,  1 },
+                  { 3, 4,  1, 2 } };
+    int[][] G = {{0,0,0,0,0},
+                {0,0,0,0,0}
+                };
+    int[][] H = {{10}};
+    int[][] I =  {
+                  {1, 2, 3, 4},
+                  {-2, 3, 4, 5},
+                  {-1, -1, -1, 13},
+                  {20, -9, -3, 2}
+                };
+    int[][] J = {
+                  {1, 2, 32, 4},
+                  {-82, 763, 43, 95},
+                  {-21, 231, -54351, 123},
+                  {2230, -39, -23, 2443}
+                };
+
+
     System.out.println("----------Sum----------");
     System.out.println(ArrayOps.sum(a));
     System.out.println(ArrayOps.sum(b));
@@ -56,5 +77,12 @@ public class Tester {
     System.out.println(Arrays.toString(ArrayOps.sumCols(C)));
     System.out.println(Arrays.toString(ArrayOps.sumCols(D)));
     System.out.println(Arrays.toString(ArrayOps.sumCols(E)));
+    System.out.println("----------isRowMagic----------");
+    System.out.println(ArrayOps.isRowMagic(F));
+    System.out.println(ArrayOps.isRowMagic(D));
+    System.out.println(ArrayOps.isRowMagic(G));
+    System.out.println(ArrayOps.isRowMagic(H));
+    System.out.println(ArrayOps.isRowMagic(I));
+    System.out.println(ArrayOps.isRowMagic(J));
   }
 }

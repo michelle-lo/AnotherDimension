@@ -66,4 +66,16 @@ public class ArrayOps {
     }
     return colsSum;
   }
+
+  //5b: isRowMagic takes a rectangular 2d array and returns true
+  //when each row has the same sum, and false otherwise.
+  public static boolean isRowMagic(int[][] matrix) {
+    int[] rowsSum = sumRows(matrix);
+    for (int i = 0; i < rowsSum.length; i++) {
+      if (rowsSum[i] != rowsSum[0]) {
+        return false;
+      }
+    }
+    return true;
+  }
 }
