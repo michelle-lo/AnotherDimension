@@ -37,6 +37,8 @@ public class Tester {
     System.out.println("----------sum(2d)----------");
     System.out.println( ArrayOps.sum(f));
     System.out.println( ArrayOps.sum(A));
+    System.out.println("----------sumCols----------");
+    System.out.println( Arrays.toString(ArrayOps.sumCols(A)));
 
 
   }
