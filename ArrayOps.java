@@ -79,10 +79,8 @@ public class ArrayOps {
     return true;
   }
 
-  /*
-  5c) isColMagic()  takes a rectangular 2d array and
-  returns true when each column has the same sum, and false otherwise.
-*/
+  //5c: isColMagic takes a rectangular 2d array and
+  //returns true when each column has the same sum, and false otherwise.
   public static boolean isColMagic(int[][] matrix) {
     int[] colsSum = sumCols(matrix);
     for (int i = 0; i < colsSum.length; i++) {
@@ -91,5 +89,21 @@ public class ArrayOps {
       }
     }
     return true;
+  }
+
+  /*
+  //5d: isLocationMagic takes a rectangular 2d array
+  and returns true when the row and column specified have the same sum.
+  {  2,  4, 2 }, sumCols: {4, 6, 4}
+  {  2, 2, 2 } }; sumRows: {8, 6}
+  */
+  public static boolean isLocationMagic(int[][] matrix, int row, int col) {
+    int[] sumCols = sumCols(matrix);
+    int[] sumRows = sumRows(matrix);
+    if (sumCols[row] == sumCols[col]) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }

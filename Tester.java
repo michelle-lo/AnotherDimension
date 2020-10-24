@@ -21,7 +21,7 @@ public class Tester {
     int[][] C =  {
                   {1, 3, 4, 5, 6, -10, 1},
                   {4, 5, 5, 4, 3, 2, 3},
-                }; //{5, 8, 9, 9, 9, -8, 4}
+                }; 
     int[][] D = {
                   {-1},
                   {0},
@@ -53,7 +53,8 @@ public class Tester {
                   {  2, 2, 2 },
                   { 3,  3, 3 } };
 
-
+    int[][] L = {{  2,  4, 2 },
+                {  2, 2, 2 } };
     System.out.println("----------Sum----------");
     System.out.println(ArrayOps.sum(a));
     System.out.println(ArrayOps.sum(b));
@@ -89,5 +90,8 @@ public class Tester {
     System.out.println(ArrayOps.isRowMagic(J));
     System.out.println("----------isColMagic----------");
     System.out.println(ArrayOps.isColMagic(K));
+    System.out.println("----------isLocationMagic----------");
+    System.out.println(ArrayOps.isLocationMagic(L, 0, 1));
+    System.out.println(ArrayOps.isLocationMagic(L, 1, 1));
   }
 }
