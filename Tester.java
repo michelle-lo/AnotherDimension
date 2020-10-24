@@ -34,5 +34,10 @@ public class Tester {
     System.out.println("----------largestInRows----------");
     System.out.println(Arrays.toString(ArrayOps.largestInRows(f)));
     System.out.println(Arrays.toString(ArrayOps.largestInRows(A)));
+    System.out.println("----------sum(2d)----------");
+    System.out.println( ArrayOps.sum(f));
+    System.out.println( ArrayOps.sum(A));
+
+
   }
 }

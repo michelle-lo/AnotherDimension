@@ -3,7 +3,7 @@ public class ArrayOps {
 
   }
 
-//4c: returns the sum of individual values in array
+//4c: sum returns the sum of individual values in array
   public static int sum(int[] arr) {
     int sum = 0;
     for (int i = 0; i < arr.length; i++) {
@@ -12,7 +12,7 @@ public class ArrayOps {
     return sum;
   }
 
-//4b: returns the largest value in array
+//4b: largest returns the largest value in array
   public static  int largest(int[]arr) {
     int max = arr[0];
     for (int i = 0; i < arr.length; i++) {
@@ -22,9 +22,8 @@ public class ArrayOps {
     }
     return max;
   }
-  /* sumRows()` takes a 2D array of int, and returns a 1D array of int
-  with each element being the sum of the individual rows of the 2D array.
-  */
+
+  // 4c: sumRows returns array with sum of each row.
   public static int[] sumRows(int[][] matrix) {
     int[] sumArr = new int[matrix.length];
     for (int i = 0; i < matrix.length; i++) {
@@ -33,11 +32,23 @@ public class ArrayOps {
     return sumArr;
   }
 
+  //4d: largestInRows returns array with largest value from each array.
   public static  int[] largestInRows(int[][] matrix) {
     int[] maxArr = new int[matrix.length];
     for (int i = 0; i < matrix.length; i++) {
         maxArr[i] = largest(matrix[i]);
     }
     return maxArr;
+  }
+
+  //4e: sum takes a 2D array of int,
+  //and returns the sum of all the individual values in all of the arrays.
+  public static  int sum(int[][] arr) {
+    int totalSum = 0;
+    int[] sumArr = sumRows(arr);
+    for (int i = 0; i < sumArr.length; i++) {
+      totalSum += sumArr[i];
+    }
+    return totalSum;
   }
 }
