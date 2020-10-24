@@ -49,6 +49,9 @@ public class Tester {
                   {-21, 231, -54351, 123},
                   {2230, -39, -23, 2443}
                 };
+    int[][] K = { {  1,  1, 1 },
+                  {  2, 2, 2 },
+                  { 3,  3, 3 } };
 
 
     System.out.println("----------Sum----------");
@@ -84,5 +87,7 @@ public class Tester {
     System.out.println(ArrayOps.isRowMagic(H));
     System.out.println(ArrayOps.isRowMagic(I));
     System.out.println(ArrayOps.isRowMagic(J));
+    System.out.println("----------isColMagic----------");
+    System.out.println(ArrayOps.isColMagic(K));
   }
 }
