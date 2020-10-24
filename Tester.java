@@ -16,6 +16,20 @@ public class Tester {
                   { -5, -2,  2, -9 }
                };
     int[]  B  =   {  1, 3, 5 };
+
+
+    int[][] C =  {
+                  {1, 3, 4, 5, 6, -10, 1},
+                  {4, 5, 5, 4, 3, 2, 3},
+                }; //{5, 8, 9, 9, 9, -8, 4}
+    int[][] D = {
+                  {-1},
+                  {0},
+                  {3},
+                  {4},
+                  {5}
+                };
+    int[][] E = {{}};
     System.out.println("----------Sum----------");
     System.out.println(ArrayOps.sum(a));
     System.out.println(ArrayOps.sum(b));
@@ -39,7 +53,8 @@ public class Tester {
     System.out.println( ArrayOps.sum(A));
     System.out.println("----------sumCols----------");
     System.out.println( Arrays.toString(ArrayOps.sumCols(A)));
-
-
+    System.out.println(Arrays.toString(ArrayOps.sumCols(C)));
+    System.out.println(Arrays.toString(ArrayOps.sumCols(D)));
+    System.out.println(Arrays.toString(ArrayOps.sumCols(E)));
   }
 }

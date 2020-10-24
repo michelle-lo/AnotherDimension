@@ -52,21 +52,18 @@ public class ArrayOps {
     return totalSum;
   }
 
-/*
-  5a) sumCols takes a 2D array that must be rectangular
-  (all rows have the same length) and returns a 1D array
-  of int with each element being the sum of the individual columns
-  of the 2D array.
-*/
+  //5a: sumCols  returns a 1D array of int with each element
+  //being the sum of the individual columns of the 2D array.
   public static int[] sumCols(int[][] matrix) {
-    int[] colsArr = new int[matrix[0].length];
-    for (int i = 0; i < matrix[0].length; i++) {
-      int sum = 0;
-      for (int j = 0; j < matrix.length; j++) {
-        sum += matrix[j][i];
-      }
-      colsArr[i] = sum;
+    if (matrix.length == 0) {
+      return new int[0];
     }
-    return colsArr;
+    int[] colsSum = new int[matrix[0].length];
+    for (int i = 0; i < matrix.length; i++) {
+      for (int j = 0; j < matrix[0].length; j++) {
+        colsSum[j] += matrix[i][j];
+      }
+    }
+    return colsSum;
   }
 }
