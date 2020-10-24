@@ -22,12 +22,22 @@ public class ArrayOps {
     }
     return max;
   }
+  /* sumRows()` takes a 2D array of int, and returns a 1D array of int
+  with each element being the sum of the individual rows of the 2D array.
+  */
+  public static int[] sumRows(int[][] matrix) {
+    int[] sumArr = new int[matrix.length];
+    for (int i = 0; i < matrix.length; i++) {
+      sumArr[i] = sum(matrix[i]);
+    }
+    return sumArr;
+  }
 
   public static  int[] largestInRows(int[][] matrix) {
-    int[] maxArray = new int[matrix.length];
+    int[] maxArr = new int[matrix.length];
     for (int i = 0; i < matrix.length; i++) {
-        maxArray[i] = largest(matrix[i]);
+        maxArr[i] = largest(matrix[i]);
     }
-    return maxArray;
+    return maxArr;
   }
 }

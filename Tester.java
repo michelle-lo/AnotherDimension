@@ -19,15 +19,20 @@ public class Tester {
     System.out.println("----------Sum----------");
     System.out.println(ArrayOps.sum(a));
     System.out.println(ArrayOps.sum(b));
+    System.out.println(ArrayOps.sum(c));
     System.out.println(ArrayOps.sum(d));
+    System.out.println(ArrayOps.sum(e));
     System.out.println("----------ArrayOps----------");
     System.out.println(ArrayOps.largest(a));
     System.out.println(ArrayOps.largest(b));
     System.out.println(ArrayOps.largest(c));
     System.out.println(ArrayOps.largest(d));
     System.out.println(ArrayOps.largest(e));
+    System.out.println("----------sumRows----------");
+    System.out.println(Arrays.toString(ArrayOps.sumRows(f)));
+    System.out.println(Arrays.toString(ArrayOps.sumRows(A)));
     System.out.println("----------largestInRows----------");
     System.out.println(Arrays.toString(ArrayOps.largestInRows(f)));
-    System.out.println(Arrays.toString(ArrayOps.largestInRows(A))); 
+    System.out.println(Arrays.toString(ArrayOps.largestInRows(A)));
   }
 }
